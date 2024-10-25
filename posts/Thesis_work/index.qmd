@@ -22,3 +22,4 @@ The following blog post talks about my escapades with my master thesis, titled "
 	- This led me to wonder: could decoder-only models like GPT take on more specialized legal tasks without that level of setup? While some studies (like DISC-LawLLM) show that decoder models can handle open-ended legal tasks, they still aren’t the first choice for specialized legal functions, where encoder models remain dominant.
 ### Are Decoder Models Ready for Legal Use-cases?
 	- Decoder models show promise for generalized legal Q&A systems, particularly with recent advances in customization tools (thanks to Hugging Face, which i have used extensively for the pipelines i implemented). What makes them so exciting is that you dont necessarily need to teach the already vastly knowlegdable model a new corpus of text, rather you can just fine-tune the model to teach it the necessary style adaptations and get (hopefully)promising results.
+	---
