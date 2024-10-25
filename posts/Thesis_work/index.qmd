@@ -5,7 +5,7 @@ title: Making LLaMa-2 answer the Bar.
 
 ---
 
-![Law and AI](assets/courtroom.jpeg)
+![Law and AI](/home/rean/Desktop/ReanFernandes.github.io/assets/courtroom.jpeg)
 - The following blog post talks about my escapades with my master thesis, titled "Supervised Fine-Tuning of Open LLMs for Law: Training and Evaluation for Performance in Legal Examinations"
 - # Motivation
 - To begin with, the main motivation of the thesis was to bring together somehow an open source ( atleast open weight model) and the legal domain. The field of law is steeped in complex terminologies, rich contextual dependencies and a heavy basis in the applications of concepts learned over years of study into real life ( where alot of scenarios are very case specific), it seemed like a good testing bed for the premise of using a large language model for the task
