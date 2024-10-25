@@ -5,7 +5,7 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Reans blog</title>
+<title>Flashy Blog name</title>
 <link>ReanFernandes.github.io/</link>
 <atom:link href="ReanFernandes.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
@@ -21,14 +21,10 @@
 
 
 <ul>
-<li>The following blog post talks about my escapades with my master thesis, titled “Supervised Fine-Tuning of Open LLMs for Law: Training and Evaluation for Performance in Legal Examinations”
-<ul>
-<li>
-<ul>
+<li>The following blog post talks about my escapades with my master thesis, titled “Supervised Fine-Tuning of Open LLMs for Law: Training and Evaluation for Performance in Legal Examinations”</li>
+<li></li>
 <li>TO begin with, the main motivation of the thesis was to bring together somehow an open source ( atleast open weight model) and the legal domain. The field of law is steeped in complex terminologies, rich contextual dependencies and a heavy basis in the applications of concepts learned over years of study into real life ( where alot of scenarios are very case specific), it seemed like a good testing bed for the premise of using a large language model for the task</li>
-</ul></li>
-<li>
-<ul>
+<li></li>
 <li>I did an extensive literature survey, which is provided in my thesis report for those interested in reading further. I will condense it here and also expand a few things in the interest of building a cohesive story here :)</li>
 <li>
 <ul>
@@ -43,8 +39,6 @@
 <li>This led me to wonder: could decoder-only models like GPT take on more specialized legal tasks without that level of setup? While some studies (like DISC-LawLLM) show that decoder models can handle open-ended legal tasks, they still aren’t the first choice for specialized legal functions, where encoder models remain dominant.</li>
 <li></li>
 <li>Decoder models show promise for generalized legal Q&amp;A systems, particularly with recent advances in customization tools (thanks to Hugging Face, which i have used extensively for the pipelines i implemented). What makes them so exciting is that you dont necessarily need to teach the already vastly knowlegdable model a new corpus of text, rather you can just fine-tune the model to teach it the necessary style adaptations and get (hopefully)promising results.</li>
-</ul></li>
-</ul></li>
 </ul></li>
 </ul>
 
