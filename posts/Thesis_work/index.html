@@ -148,14 +148,35 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Law and AI (made with deepai.org)</figcaption>
 </figure>
 </div>
-<p>The following blog post talks about my escapades with my master thesis, titled “Supervised Fine-Tuning of Open LLMs for Law: Training and Evaluation for Performance in Legal Examinations”. # Motivation - To begin with, the main motivation of the thesis was to bring together somehow an open source ( atleast open weight model) and the legal domain. The field of law is steeped in complex terminologies, rich contextual dependencies and a heavy basis in the applications of concepts learned over years of study into real life ( where alot of scenarios are very case specific), it seemed like a good testing bed for the premise of using a large language model for the task # Existing literature - I did an extensive literature survey, which is provided in my thesis report for those interested in reading further. I will condense it here and also expand a few things in the interest of building a cohesive story here :) ## Encoder based models - a Lot of legal LLM applications, at the time of my literature survey, worked on applying *Encoder based models to specific legal tasks. These tasks ranged from niche functions such as contract-review, Legal rule classification, court judgement prediction and other legal stuff that i cannot recall exactly but remember were beyond my comprehension at the time ( probably still ). - One thing that bugged me, was that these studies and datasets involved alot of preprocessing and informed legal knowledge ( as such many of the authors of these works are lawyers, and rightly so), that it seemed that the adoption of encoder based models was not a straight forward task. - The question that begged to be answered, was that, given the pervasive rise of llms, and their adoption into so many different purpose that already signified their extreme potential for generalising to tasks with simple, accessible and well established fine-tuning methods ( thanks majorly in part to huggingface libraries, atleast in my project); could LLMs be fine-tuned with a fraction of the effort to perform well in the legal domain? ## Existing shows of performance of LLMs in Legal domains ### Decoder-Based Models: What About Their Role in Law? - This is where things get interesting. Decoder-only models like GPT-3 and GPT-4 have certainly made headlines with some impressive achievements. Take GPT-4, for instance: it managed to pass the bar exam, hitting an impressive 90th percentile (although they reported the best performing instance, so tiny bit of cherry picking there). They showed that, without extra legal training, a model Like GPT4 could reason through legal questions with some accuracy. But here’s the catch—it wasn’t fine-tuned specifically for legal tasks. They tested it with bar questions as-is, highlighting that while these models can handle broad legal tasks, they’re not yet positioned to replace human legal advisors. - This led me to wonder: could decoder-only models like GPT take on more specialized legal tasks without that level of setup? While some studies (like DISC-LawLLM) show that decoder models can handle open-ended legal tasks, they still aren’t the first choice for specialized legal functions, where encoder models remain dominant. ### Are Decoder Models Ready for Legal Use-cases? - Decoder models show promise for generalized legal Q&amp;A systems, particularly with recent advances in customization tools (thanks to Hugging Face, which i have used extensively for the pipelines i implemented). What makes them so exciting is that you dont necessarily need to teach the already vastly knowlegdable model a new corpus of text, rather you can just fine-tune the model to teach it the necessary style adaptations and get (hopefully)promising results. —</p>
+The following blog post talks about my escapades with my master thesis, titles
+<title>
+&lt;section id="motivation" class="level2"&gt;
+&lt;h2&gt;Motivation&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;TO begin with, the main motivation of the thesis was to bring together somehow an open source ( atleast open weight model) and the legal domain. The field of law is steeped in complex terminologies, rich contextual dependencies and a heavy basis in the applications of concepts learned over years of study into real life ( where alot of scenarios are very case specific), it seemed like a good testing bed for the premise of using a large language model for the task
+## Existing literature
+    I did an extensive literature survey, which is provided in my thesis report for those interested in reading further. I will condense it here and also expand a few things in the interest of building a cohesive story here :)
+    ### Encoder based models
+        a Lot of legal LLM applications, at the time of my literature survey, worked on applying *Encoder based models to specific legal tasks. These tasks ranged from niche functions such as contract-review, Legal rule classification, court judgement prediction and other legal stuff that i cannot recall exactly but remember were beyond my comprehension at the time ( probably still ).
+        One thing that bugged me, was that these studies and datasets involved alot of preprocessing and informed legal knowledge ( as such many of the authors of these works are lawyers, and rightly so), that it seemed that the adoption of encoder based models was not a straight forward task.
+        The question that begged to be answered, was that, given the pervasive rise of llms, and their adoption into so many different purpose that already signified their extreme potential for generalising to tasks with simple, accessible and well established fine-tuning methods ( thanks majorly in part to huggingface libraries, atleast in my project); could LLMs be fine-tuned with a fraction of the effort to perform well in the legal domain?
+    ### Existing shows of performance of LLMs in Legal domains
+        ### Decoder-Based Models: What About Their Role in Law?
+        This is where things get interesting. Decoder-only models like GPT-3 and GPT-4 have certainly made headlines with some impressive achievements. Take GPT-4, for instance: it managed to pass the bar exam, hitting an impressive 90th percentile (although they reported the best performing instance, so tiny bit of cherry picking there). They showed that, without extra legal training, a model Like GPT4 could reason through legal questions with some accuracy. But here's the catch—it wasn't fine-tuned specifically for legal tasks. They tested it with bar questions as-is, highlighting that while these models can handle broad legal tasks, they’re not yet positioned to replace human legal advisors.
+        This led me to wonder: could decoder-only models like GPT take on more specialized legal tasks without that level of setup? While some studies (like DISC-LawLLM) show that decoder models can handle open-ended legal tasks, they still aren’t the first choice for specialized legal functions, where encoder models remain dominant.
+        ### Are Decoder Models Ready for Legal Use-cases?
+        Decoder models show promise for generalized legal Q&amp;A systems, particularly with recent advances in customization tools (thanks to Hugging Face, which i have used extensively for the pipelines i implemented). What makes them so exciting is that you dont necessarily need to teach the already vastly knowlegdable model a new corpus of text, rather you can just fine-tune the model to teach it the necessary style adaptations and get (hopefully)promising results.&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="quarto-navigation-envelope" class="hidden"&gt;
+&lt;p&gt;&lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar-title"&gt;Flashy Blog name&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar-title"&gt;Flashy Blog name&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:About"&gt;About&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:/about.html"&gt;/about.html&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-navbar:https://github.com/ReanFernandes"&gt;https://github.com/ReanFernandes&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="quarto-meta-markdown" class="hidden"&gt;
+&lt;p&gt;&lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-metatitle"&gt;Making LLaMa-2 answer the Bar. – Flashy Blog name&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-twittercardtitle"&gt;Making LLaMa-2 answer the Bar. – Flashy Blog name&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-ogcardtitle"&gt;Making LLaMa-2 answer the Bar. – Flashy Blog name&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-metasitename"&gt;Flashy Blog name&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-twittercarddesc"&gt;&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-ogcardddesc"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
 
-
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+&lt;/main&gt; &lt;!-- /main --&gt;
+&lt;script id = "quarto-html-after-body" type="application/javascript"&gt;
 window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
+  const toggleBodyColorMode = (bsSheetEl) =&gt; {
     const mode = bsSheetEl.getAttribute("data-mode");
     const bodyEl = window.document.querySelector("body");
     if (mode === "dark") {
@@ -166,28 +187,28 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       bodyEl.classList.remove("quarto-dark");
     }
   }
-  const toggleBodyColorPrimary = () => {
+  const toggleBodyColorPrimary = () =&gt; {
     const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
     if (bsSheetEl) {
       toggleBodyColorMode(bsSheetEl);
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
+  const disableStylesheet = (stylesheets) =&gt; {
+    for (let i=0; i &lt; stylesheets.length; i++) {
       const stylesheet = stylesheets[i];
       stylesheet.rel = 'prefetch';
     }
   }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
+  const enableStylesheet = (stylesheets) =&gt; {
+    for (let i=0; i &lt; stylesheets.length; i++) {
       const stylesheet = stylesheets[i];
       stylesheet.rel = 'stylesheet';
     }
   }
-  const manageTransitions = (selector, allowTransitions) => {
+  const manageTransitions = (selector, allowTransitions) =&gt; {
     const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
+    for (let i=0; i &lt; els.length; i++) {
       const el = els[i];
       if (allowTransitions) {
         el.classList.remove('notransition');
@@ -196,7 +217,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) =&gt; {
     const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
     const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
     let newTheme = '';
@@ -205,9 +226,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     } else {
       newTheme = isAlternate ? alternateTheme : baseTheme;
     }
-    const changeGiscusTheme = () => {
+    const changeGiscusTheme = () =&gt; {
       // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
+      const sendMessage = (message) =&gt; {
         const iframe = document.querySelector('iframe.giscus-frame');
         if (!iframe) return;
         iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
@@ -223,7 +244,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       changeGiscusTheme();
     }
   }
-  const toggleColorMode = (alternate) => {
+  const toggleColorMode = (alternate) =&gt; {
     // Switch the stylesheets
     const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
     manageTransitions('#quarto-margin-sidebar .nav-link', false);
@@ -241,7 +262,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     manageTransitions('#quarto-margin-sidebar .nav-link', true);
     // Switch the toggles
     const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
+    for (let i=0; i &lt; toggles.length; i++) {
       const toggle = toggles[i];
       if (toggle) {
         if (alternate) {
@@ -253,19 +274,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     // Hack to workaround the fact that safari doesn't
     // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+    if (navigator.userAgent.indexOf('Safari') &gt; 0 &amp;&amp; navigator.userAgent.indexOf('Chrome') == -1) {
       manageTransitions("body", false);
       window.scrollTo(0, 1);
-      setTimeout(() => {
+      setTimeout(() =&gt; {
         window.scrollTo(0, 0);
         manageTransitions("body", true);
       }, 40);  
     }
   }
-  const isFileUrl = () => { 
+  const isFileUrl = () =&gt; { 
     return window.location.protocol === 'file:';
   }
-  const hasAlternateSentinel = () => {  
+  const hasAlternateSentinel = () =&gt; {  
     let styleSentinel = getColorSchemeSentinel();
     if (styleSentinel !== null) {
       return styleSentinel === "alternate";
@@ -273,7 +294,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return false;
     }
   }
-  const setStyleSentinel = (alternate) => {
+  const setStyleSentinel = (alternate) =&gt; {
     const value = alternate ? "alternate" : "default";
     if (!isFileUrl()) {
       window.localStorage.setItem("quarto-color-scheme", value);
@@ -281,7 +302,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       localAlternateSentinel = value;
     }
   }
-  const getColorSchemeSentinel = () => {
+  const getColorSchemeSentinel = () =&gt; {
     if (!isFileUrl()) {
       const storageValue = window.localStorage.getItem("quarto-color-scheme");
       return storageValue != null ? storageValue : localAlternateSentinel;
@@ -292,7 +313,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   const darkModeDefault = false;
   let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
+  window.quartoToggleColorScheme = () =&gt; {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
@@ -324,7 +345,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
+  const isCodeAnnotation = (el) =&gt; {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
         return true;
@@ -390,12 +411,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("ReanFernandes\.github\.io");
-    var isInternal = (href) => {
+    var isInternal = (href) =&gt; {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
  	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
+    for (var i=0; i&lt;links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
         // undo the damage that might have been done by quarto-nav.js in the case of
@@ -431,7 +452,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
+  for (var i=0; i&lt;noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
       // use id or data attribute instead here
@@ -447,9 +468,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
+  const processXRef = (id, note) =&gt; {
     // Strip column container classes
-    const stripColumnClz = (el) => {
+    const stripColumnClz = (el) =&gt; {
       el.classList.remove("page-full", "page-columns");
       if (el.children) {
         for (const child of el.children) {
@@ -461,11 +482,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
+      if (note.children &amp;&amp; note.children.length &gt; 2) {
         container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
+        for (let i = 1; i &lt; note.children.length; i++) {
           const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
+          if (child.tagName === "P" &amp;&amp; child.innerText === "") {
             continue;
           } else {
             container.appendChild(child.cloneNode(true));
@@ -499,7 +520,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
-  for (var i=0; i<xrefs.length; i++) {
+  for (var i=0; i&lt;xrefs.length; i++) {
     const xref = xrefs[i];
     tippyHover(xref, undefined, function(instance) {
       instance.disable();
@@ -524,8 +545,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         } else {
           // See if we can fetch this
           fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
+          .then(res =&gt; res.text())
+          .then(html =&gt; {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
             const note = htmlDoc.getElementById(id);
@@ -533,7 +554,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
               const html = processXRef(id, note);
               instance.setContent(html);
             } 
-          }).finally(() => {
+          }).finally(() =&gt; {
             instance.enable();
             instance.show();
           });
@@ -542,8 +563,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         // See if we can fetch a full url (with no hash to target)
         // This is a special case and we should probably do some content thinning / targeting
         fetch(url)
-        .then(res => res.text())
-        .then(html => {
+        .then(res =&gt; res.text())
+        .then(html =&gt; {
           const parser = new DOMParser();
           const htmlDoc = parser.parseFromString(html, "text/html");
           const note = htmlDoc.querySelector('main.content');
@@ -551,13 +572,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             // This should only happen for chapter cross references
             // (since there is no id in the URL)
             // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+            if (note.children.length &gt; 0 &amp;&amp; note.children[0].tagName === "HEADER") {
               note.children[0].remove();
             }
             const html = processXRef(null, note);
             instance.setContent(html);
           } 
-        }).finally(() => {
+        }).finally(() =&gt; {
           instance.enable();
           instance.show();
         });
@@ -566,36 +587,36 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
       let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
+      const selectorForAnnotation = ( cell, annotation) =&gt; {
         let cellAttr = 'data-code-cell="' + cell + '"';
         let lineAttr = 'data-code-annotation="' +  annotation + '"';
         const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
         return selector;
       }
-      const selectCodeLines = (annoteEl) => {
+      const selectCodeLines = (annoteEl) =&gt; {
         const doc = window.document;
         const targetCell = annoteEl.getAttribute("data-target-cell");
         const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
         const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
         const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
+        const lineIds = lines.map((line) =&gt; {
           return targetCell + "-" + line;
         })
         let top = null;
         let height = null;
         let parent = null;
-        if (lineIds.length > 0) {
+        if (lineIds.length &gt; 0) {
             //compute the position of the single el (top and bottom and make a div)
             const el = window.document.getElementById(lineIds[0]);
             top = el.offsetTop;
             height = el.offsetHeight;
             parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
+          if (lineIds.length &gt; 1) {
             const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
             const bottom = lastEl.offsetTop + lastEl.offsetHeight;
             height = bottom - top;
           }
-          if (top !== null && height !== null && parent !== null) {
+          if (top !== null &amp;&amp; height !== null &amp;&amp; parent !== null) {
             // cook up a div (if necessary) and position it 
             let div = window.document.getElementById("code-annotation-line-highlight");
             if (div === null) {
@@ -622,9 +643,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           selectedAnnoteEl = annoteEl;
         }
       };
-      const unselectCodeLines = () => {
+      const unselectCodeLines = () =&gt; {
         const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
+        elementsIds.forEach((elId) =&gt; {
           const div = window.document.getElementById(elId);
           if (div) {
             div.remove();
@@ -635,7 +656,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         // Handle positioning of the toggle
     window.addEventListener(
       "resize",
-      throttle(() => {
+      throttle(() =&gt; {
         elRect = undefined;
         if (selectedAnnoteEl) {
           selectCodeLines(selectedAnnoteEl);
@@ -645,13 +666,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     function throttle(fn, ms) {
     let throttle = false;
     let timer;
-      return (...args) => {
+      return (...args) =&gt; {
         if(!throttle) { // first call gets through
             fn.apply(this, args);
             throttle = true;
         } else { // all the others get throttled
             if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
+            timer = setTimeout(() =&gt; {
               fn.apply(this, args);
               timer = throttle = false;
             }, ms);
@@ -661,7 +682,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
+        annoteDlNode.addEventListener('click', (event) =&gt; {
           const clickedEl = event.target;
           if (clickedEl !== selectedAnnoteEl) {
             unselectCodeLines();
@@ -678,7 +699,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           }
         });
       }
-  const findCites = (el) => {
+  const findCites = (el) =&gt; {
     const parentEl = el.parentElement;
     if (parentEl) {
       const cites = parentEl.dataset.cites;
@@ -695,7 +716,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
+  for (var i=0; i&lt;bibliorefs.length; i++) {
     const ref = bibliorefs[i];
     const citeInfo = findCites(ref);
     if (citeInfo) {
@@ -716,10 +737,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-</div> <!-- /content -->
+&lt;/script&gt;
+&lt;/div&gt; &lt;!-- /content --&gt;
 
+&lt;/body&gt;
 
-
-
-</body></html>
+&lt;/html&gt;
+</title></main></div></body></html>
