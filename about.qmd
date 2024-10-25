@@ -6,11 +6,10 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/in/sai-prasanna-r-422aaba4
+      href: https://www.linkedin.com/i
     - icon: github
       text: Github
       href: https://github.com/ReanFernandes
 ---
 
-About this blog
-cholo
+Hello! My name is Rean Fernandes, and I am a Masters graduate in Embedded Systems Engineering with a Specialisation in Artificial intelligence. This blog is a small peek into my academic life and will randomly contain my musings and opinions from time to time. There are two main reasons for this blog to exist, the first being to offer a comprehensive look into my projects to prospective employers/collaborators and the second, as a way-back machine of my own. Hope you have a good time :huggingface:
