@@ -1,1 +1,1 @@
-Sitemap: ReanFernandes.github.io/sitemap.xml
+Sitemap: https://ReanFernandes.github.io/sitemap.xml
