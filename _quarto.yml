@@ -1,20 +1,46 @@
+# project:
+#   type: website
+
+# website:
+#   title: "Flashy Blog name"
+#   navbar:
+#     right:
+#       - about.qmd
+#       - icon: github
+#         href: https://github.com/ReanFernandes
+      
+#   site-url: ReanFernandes.github.io
+# format:
+#   html:
+#     theme:
+#       light: flatly
+#       dark: darkly
+#     css: styles.css
+# execute:
+#   freeze: auto
+
 project:
   type: website
 
 website:
-  title: "Flashy Blog name"
+  title: "[Sub]-Optimal Trajectories"
   navbar:
     right:
-      - about.qmd
+      - text: "About"
+        file: about.qmd
+      - text: "Projects"
+        file: posts/Thesis_work/index.qmd
       - icon: github
         href: https://github.com/ReanFernandes
-      
-  site-url: ReanFernandes.github.io
+
+  site-url: https://ReanFernandes.github.io
+
 format:
   html:
     theme:
       light: flatly
       dark: darkly
     css: styles.css
+
 execute:
   freeze: auto

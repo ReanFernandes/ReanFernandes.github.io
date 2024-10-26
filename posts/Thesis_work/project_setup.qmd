@@ -1,0 +1,8 @@
+---
+title: "Making LLaMa-2 Answer the Bar"
+subtitle: "Idea and Project Setup"
+date: '2024-09-27'
+description: "The how's and why's of module choices I made"
+categories: [LLMs, Law, Master Thesis, NLP]
+---
+

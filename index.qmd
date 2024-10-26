@@ -1,6 +1,6 @@
 ---
-title: "Reans Blog"
-subtitle: "subtitle"
+title: "Selected projects (not in a tutorial format)"
+subtitle: "I write here about mostly the nitty-gritty stuff focused on problems I encountered in my projects my take-aways"
 listing:
   contents: posts
   sort: "date desc"
