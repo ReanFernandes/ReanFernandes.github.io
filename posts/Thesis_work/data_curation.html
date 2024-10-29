@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-09-27">
-<meta name="description" content="How I fine-tuned LLaMa 2 to answer the Multi state bar exam">
+<meta name="dcterms.date" content="2024-09-29">
+<meta name="description" content="How I formatted the dataset in preparation for fine-tuning">
 
-<title>Making LLaMa-2 Answer the Bar : Part 1 – [Sub]-Optimal Trajectories</title>
+<title>Making LLaMa-2 Answer the Bar : Part 3 – [Sub]-Optimal Trajectories</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -134,18 +134,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Making LLaMa-2 Answer the Bar : Part 1</h1>
-<p class="subtitle lead">Motivation and Literature survey</p>
+<h1 class="title">Making LLaMa-2 Answer the Bar : Part 3</h1>
+<p class="subtitle lead">Data curation and distillation</p>
   <div class="quarto-categories">
-    <div class="quarto-category">AI</div>
+    <div class="quarto-category">LLMs</div>
     <div class="quarto-category">Law</div>
-    <div class="quarto-category">Thesis</div>
+    <div class="quarto-category">Master Thesis</div>
+    <div class="quarto-category">NLP</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    How I fine-tuned LLaMa 2 to answer the Multi state bar exam
+    How I formatted the dataset in preparation for fine-tuning
   </div>
 </div>
 
@@ -156,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 27, 2024</p>
+      <p class="date">September 29, 2024</p>
     </div>
   </div>
   
@@ -168,42 +169,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../assets/courtroom.jpeg" class="custom_img img-fluid figure-img"></p>
-<figcaption>Law and AI (made with deepai.org)</figcaption>
-</figure>
-</div>
-<p>The following blog post talks about my escapades with my master’s thesis, titled <strong>Supervised Fine-Tuning of Open LLMs for Law: Training and Evaluation for Performance in Legal Examinations.</strong></p>
-<section id="motivation" class="level1">
-<h1>Motivation</h1>
-<p>To begin with, the main motivation of the thesis was to bring together an open-source (at least open weight model) and the legal domain. The field of law is steeped in complex terminologies, rich contextual dependencies, and a heavy basis in the applications of concepts learned over years of study into real life (where a lot of scenarios are very case-specific), it seemed like a good testing bed for the premise of using a large language model for the task.</p>
-</section>
-<section id="existing-literature" class="level1">
-<h1>Existing Literature</h1>
-<p>I did an extensive literature survey, which is provided in my thesis report for those interested in reading further. I will condense it here and also expand a few things in the interest of building a cohesive story here. :)</p>
-<section id="encoder-based-models" class="level2">
-<h2 class="anchored" data-anchor-id="encoder-based-models">Encoder-Based Models</h2>
-<p>A lot of legal LLM applications, at the time of my literature survey, worked on applying <em>encoder-based models</em> to specific legal tasks. These tasks ranged from niche functions such as contract review, legal rule classification, court judgment prediction, and other legal matters that I cannot recall exactly but remember were beyond my comprehension at the time (probably still).</p>
-<p>One thing that bugged me was that these studies and datasets involved a lot of preprocessing and informed legal knowledge (as such many of the authors of these works are lawyers, and rightly so), which made the adoption of encoder-based models not a straightforward task.</p>
-<p>The question that begged to be answered was, given the pervasive rise of LLMs and their adoption into so many different purposes that already signified their extreme potential for generalizing to tasks with simple, accessible, and well-established fine-tuning methods (thanks majorly in part to Hugging Face libraries, at least in my project); could LLMs be fine-tuned with a fraction of the effort to perform well in the legal domain?</p>
-</section>
-<section id="existing-shows-of-performance-of-llms-in-legal-domains" class="level2">
-<h2 class="anchored" data-anchor-id="existing-shows-of-performance-of-llms-in-legal-domains">Existing Shows of Performance of LLMs in Legal Domains</h2>
-<section id="decoder-based-models-what-about-their-role-in-law" class="level3">
-<h3 class="anchored" data-anchor-id="decoder-based-models-what-about-their-role-in-law">Decoder-Based Models: What About Their Role in Law?</h3>
-<p>This is where things get interesting. Decoder-only models like GPT-3 and GPT-4 have certainly made headlines with some impressive achievements. Take GPT-4, for instance: it managed to pass the bar exam, hitting an impressive 90th percentile (although they reported the best performing instance, so a tiny bit of cherry-picking there). They showed that, without extra legal training, a model like GPT-4 could reason through legal questions with some accuracy. But here’s the catch—it wasn’t fine-tuned specifically for legal tasks. They tested it with bar questions as-is, highlighting that while these models can handle broad legal tasks, they’re not yet positioned to replace human legal advisors.</p>
-<p>This led me to wonder: could decoder-only models like GPT take on more specialized legal tasks without that level of setup? While some studies (like DISC-LawLLM) show that decoder models can handle open-ended legal tasks, they still aren’t the first choice for specialized legal functions, where encoder models remain dominant.</p>
-</section>
-<section id="are-decoder-models-ready-for-legal-use-cases" class="level3">
-<h3 class="anchored" data-anchor-id="are-decoder-models-ready-for-legal-use-cases">Are Decoder Models Ready for Legal Use-cases?</h3>
-<p>Decoder models show promise for generalized legal Q&amp;A systems, particularly with recent advances in customization tools (thanks to Hugging Face, which I have used extensively for the pipelines I implemented). What makes them so exciting is that you don’t necessarily need to teach the already vastly knowledgeable model a new corpus of text; rather, you can just fine-tune the model to teach it the necessary style adaptations and get (hopefully) promising results.</p>
-<p>Continue reading: <a href="../../posts/Thesis_work/project_setup.html">Part 2 : The Idea</a></p>
+<p>[To be Filled]</p>
 
 
-</section>
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
