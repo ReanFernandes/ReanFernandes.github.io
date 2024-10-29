@@ -76,17 +76,14 @@
 <li>The authors of the GPT-4 bar paper are actual lawyers, and thus it was a simple task for them to evaluate the results of the model on these open ended generation type exams.</li>
 </ul></li>
 <li><ul>
-<li>It would be difficult to do evaluations based on open ended generaton, and I was and still am not familiar enough with using an LLM as a judge, because from the literature survey I did it seemed to me that the Judge LLM would itself require extensive tweaking to ensure that it gave us what we needed without incoporating any unwanted biases.</li>
-</ul></li>
-<li><ul>
-<li>An LLM as a judge is still a path I want to further explore in future work.</li>
+<li>It would be difficult to do evaluations based on open ended generaton, and I was and still am not familiar enough with using an LLM as a judge, because from the literature survey I did it seemed to me that the Judge LLM would itself require extensive tweaking to ensure that it gave us what we needed without incoporating any unwanted biases (<em>although An LLM as a judge is still a path I want to further explore in future work.</em>)</li>
 </ul></li>
 </ul>
 </section>
 </section>
 <section id="the-verdict-on-task-specification" class="level3">
 <h3 class="anchored" data-anchor-id="the-verdict-on-task-specification">The Verdict on task specification</h3>
-<p>We decided in the end to keep it simple, and use only the Multi-state Bar Exam (MBE) owing to its multiple choice, single answer format. This would give us a definitive evaluation strategy for our LLM that is already a well accepted paradigm ( used similarly in the <a href="https://huggingface.co/datasets/cais/mmlu">MMLU (Mulit-task Language Understanding)</a> benchmark). This would give us a simple evaluation strategy of comparing the model’s selected choice with the actual ground truth.</p>
+<p>We decided in the end to keep it simple, and use only the Multi-state Bar Exam (MBE) owing to its multiple choice, single answer format. This would give us a definitive evaluation strategy for our LLM that is already a well accepted paradigm ( used similarly in the <a href="https://huggingface.co/datasets/cais/mmlu">MMLU (Mulit-task Language Understanding)</a> benchmark). Our eval technique basically boiled down to comparing the model’s selected choice with the actual correct option.</p>
 </section>
 </section>
 <section id="deciding-on-the-model---llama-2-7b" class="level2">
