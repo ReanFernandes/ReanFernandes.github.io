@@ -1,12 +1,12 @@
 ---
-title: "Making LLaMa-2 Answer the Bar"
+title: "Making LLaMa-2 Answer the Bar : Part 1"
 subtitle: "Motivation and Literature survey"
 date: '2024-09-27'
 description: "How I fine-tuned LLaMa 2 to answer the Multi state bar exam"
 categories: [AI, Law, Thesis]
 ---
 
-![Law and AI (made with deepai.org)](../../assets/courtroom.jpeg)
+![Law and AI (made with deepai.org)](../../assets/courtroom.jpeg){.float_left}
 
 The following blog post talks about my escapades with my master's thesis, titled "Supervised Fine-Tuning of Open LLMs for Law: Training and Evaluation for Performance in Legal Examinations."
 

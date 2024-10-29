@@ -29,7 +29,11 @@ website:
       - text: "About"
         file: about.qmd
       - text: "Projects"
-        file: posts/Thesis_work/index.qmd
+        menu: 
+          - text : "Fine-tuning LLMs"
+            file : posts/Thesis_work/index.qmd
+      - text : CV
+        file : assets/Curriculum-Vitae-Rean-fds.pdf
       - icon: github
         href: https://github.com/ReanFernandes
 

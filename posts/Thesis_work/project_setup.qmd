@@ -1,8 +1,19 @@
 ---
-title: "Making LLaMa-2 Answer the Bar"
+title: "Making LLaMa-2 Answer the Bar : Part 2"
 subtitle: "Idea and Project Setup"
 date: '2024-09-27'
 description: "The how's and why's of module choices I made"
 categories: [LLMs, Law, Master Thesis, NLP]
 ---
+## The Idea
+So at this point in my thesis, the only thing I know for certain is that I am supposed to **Fine-tune an open source LLM** for some **Law related purpose**.
 
+*That was frustratingly ambiguous*. I dont really recall my thought process at the point, but the earliest thing I remember reading, and what my supervisors Noor and Andre recommended was the [GPT-4 Passes the bar](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4389233) paper. That kind of set the stage for what we would aim for. We had a well accepted publication that made waves about the zero shot capabilities of GPT-4 in answering the bar. We could build something on that premise.
+
+### The purpose
+
+I thought about it for a few days and it seemed like the bar exam would be a good thing for us to use as our testbed to check the capabilities of a fine-tuned model.
+![The path to becoming a lawyer](../../assets/how_to_become_lawyer.svg)
+It is an objective examination, and is the last exam that an aspiring lawyer must attend to be licensed to practice.
+
+### The caveats
