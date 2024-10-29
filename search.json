@@ -1,36 +1,50 @@
 [
   {
+    "objectID": "posts/Thesis_work/project_setup.html",
+    "href": "posts/Thesis_work/project_setup.html",
+    "title": "Making LLaMa-2 Answer the Bar : Part 2",
+    "section": "",
+    "text": "So at this point in my thesis, the only thing I know for certain is that I am supposed to Fine-tune an open source LLM for some Law related purpose.\nThat was frustratingly ambiguous. I dont really recall my thought process at the point, but the earliest thing I remember reading, and what my supervisors Noor and Andre recommended was the GPT-4 Passes the bar paper. That kind of set the stage for what we would aim for. We had a well accepted publication that made waves about the zero shot capabilities of GPT-4 in answering the bar. We could build something on that premise.\n\n\nI thought about it for a few days and it seemed like the bar exam would be a good thing for us to use as our testbed to check the capabilities of a fine-tuned model.  It is an objective examination, and is the last exam that an aspiring lawyer must attend to be licensed to practice."
+  },
+  {
+    "objectID": "posts/Thesis_work/project_setup.html#the-idea",
+    "href": "posts/Thesis_work/project_setup.html#the-idea",
+    "title": "Making LLaMa-2 Answer the Bar : Part 2",
+    "section": "",
+    "text": "So at this point in my thesis, the only thing I know for certain is that I am supposed to Fine-tune an open source LLM for some Law related purpose.\nThat was frustratingly ambiguous. I dont really recall my thought process at the point, but the earliest thing I remember reading, and what my supervisors Noor and Andre recommended was the GPT-4 Passes the bar paper. That kind of set the stage for what we would aim for. We had a well accepted publication that made waves about the zero shot capabilities of GPT-4 in answering the bar. We could build something on that premise.\n\n\nI thought about it for a few days and it seemed like the bar exam would be a good thing for us to use as our testbed to check the capabilities of a fine-tuned model.  It is an objective examination, and is the last exam that an aspiring lawyer must attend to be licensed to practice."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Selected projects (not in a tutorial format)",
     "section": "",
-    "text": "Making LLaMa-2 Answer the Bar\n\n\nMotivation and Literature survey\n\n\nHow I fine-tuned LLaMa 2 to answer the Multi state bar exam\n\n\n\n\n\nSep 27, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMaking LLaMa-2 Answer the Bar\n\n\nIdea and Project Setup\n\n\nThe how’s and why’s of module choices I made\n\n\n\n\n\nSep 27, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Making LLaMa-2 Answer the Bar : Part 1\n\n\nMotivation and Literature survey\n\n\nHow I fine-tuned LLaMa 2 to answer the Multi state bar exam\n\n\n\n\n\nSep 27, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMaking LLaMa-2 Answer the Bar : Part 2\n\n\nIdea and Project Setup\n\n\nThe how’s and why’s of module choices I made\n\n\n\n\n\nSep 27, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Hello! My name is Rean Fernandes, and I am a Masters graduate in Embedded Systems Engineering with a Specialisation in Artificial intelligence. This blog is a small peek into my academic life and will randomly contain my musings and opinions from time to time. There are two main reasons for this blog to exist, the first being to offer a comprehensive look into my projects to prospective employers/collaborators and the second, as a way-back machine of my own. Hope you have a good time :huggingface:"
+    "text": "Hello! My name is Rean Fernandes, and I am a Masters graduate in Embedded Systems Engineering with a Specialisation in Artificial intelligence. This blog is a small peek into my academic life and will randomly contain my musings and opinions from time to time. There are two main reasons for this blog to exist, the first being to offer a comprehensive look into my projects to prospective employers/collaborators and the second, as a way-back machine of my own. Hope you have a good time :)"
   },
   {
     "objectID": "posts/Thesis_work/index.html",
     "href": "posts/Thesis_work/index.html",
-    "title": "Making LLaMa-2 Answer the Bar",
+    "title": "Making LLaMa-2 Answer the Bar : Part 1",
     "section": "",
     "text": "Law and AI (made with deepai.org)\nThe following blog post talks about my escapades with my master’s thesis, titled “Supervised Fine-Tuning of Open LLMs for Law: Training and Evaluation for Performance in Legal Examinations.”"
   },
   {
     "objectID": "posts/Thesis_work/index.html#encoder-based-models",
     "href": "posts/Thesis_work/index.html#encoder-based-models",
-    "title": "Making LLaMa-2 Answer the Bar",
+    "title": "Making LLaMa-2 Answer the Bar : Part 1",
     "section": "Encoder-Based Models",
     "text": "Encoder-Based Models\nA lot of legal LLM applications, at the time of my literature survey, worked on applying encoder-based models to specific legal tasks. These tasks ranged from niche functions such as contract review, legal rule classification, court judgment prediction, and other legal matters that I cannot recall exactly but remember were beyond my comprehension at the time (probably still).\nOne thing that bugged me was that these studies and datasets involved a lot of preprocessing and informed legal knowledge (as such many of the authors of these works are lawyers, and rightly so), which made the adoption of encoder-based models not a straightforward task.\nThe question that begged to be answered was, given the pervasive rise of LLMs and their adoption into so many different purposes that already signified their extreme potential for generalizing to tasks with simple, accessible, and well-established fine-tuning methods (thanks majorly in part to Hugging Face libraries, at least in my project); could LLMs be fine-tuned with a fraction of the effort to perform well in the legal domain?"
   },
   {
     "objectID": "posts/Thesis_work/index.html#existing-shows-of-performance-of-llms-in-legal-domains",
     "href": "posts/Thesis_work/index.html#existing-shows-of-performance-of-llms-in-legal-domains",
-    "title": "Making LLaMa-2 Answer the Bar",
+    "title": "Making LLaMa-2 Answer the Bar : Part 1",
     "section": "Existing Shows of Performance of LLMs in Legal Domains",
     "text": "Existing Shows of Performance of LLMs in Legal Domains\n\nDecoder-Based Models: What About Their Role in Law?\nThis is where things get interesting. Decoder-only models like GPT-3 and GPT-4 have certainly made headlines with some impressive achievements. Take GPT-4, for instance: it managed to pass the bar exam, hitting an impressive 90th percentile (although they reported the best performing instance, so a tiny bit of cherry-picking there). They showed that, without extra legal training, a model like GPT-4 could reason through legal questions with some accuracy. But here’s the catch—it wasn’t fine-tuned specifically for legal tasks. They tested it with bar questions as-is, highlighting that while these models can handle broad legal tasks, they’re not yet positioned to replace human legal advisors.\nThis led me to wonder: could decoder-only models like GPT take on more specialized legal tasks without that level of setup? While some studies (like DISC-LawLLM) show that decoder models can handle open-ended legal tasks, they still aren’t the first choice for specialized legal functions, where encoder models remain dominant.\n\n\nAre Decoder Models Ready for Legal Use-cases?\nDecoder models show promise for generalized legal Q&A systems, particularly with recent advances in customization tools (thanks to Hugging Face, which I have used extensively for the pipelines I implemented). What makes them so exciting is that you don’t necessarily need to teach the already vastly knowledgeable model a new corpus of text; rather, you can just fine-tune the model to teach it the necessary style adaptations and get (hopefully) promising results.\nContinue reading: Part 2 : The Idea"
   }

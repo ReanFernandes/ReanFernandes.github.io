@@ -1,1 +1,18 @@
 /* css styles */
+.custom_img {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+.float_left {
+    float: left;
+    margin-right: 10px;
+    width: 300px;
+  }
+  
+.float_right {
+    float: right;
+    margin-left: 10px;
+    width: 45%;
+  }

@@ -9,7 +9,7 @@
 <meta name="dcterms.date" content="2024-09-27">
 <meta name="description" content="The how’s and why’s of module choices I made">
 
-<title>Making LLaMa-2 Answer the Bar – [Sub]-Optimal Trajectories</title>
+<title>Making LLaMa-2 Answer the Bar : Part 2 – [Sub]-Optimal Trajectories</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -96,9 +96,20 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="../../posts/Thesis_work/index.html">
+ <span class="dropdown-text">Fine-tuning LLMs</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../posts/Thesis_work/index.html"> 
-<span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="../../assets/Curriculum-Vitae-Rean-fds.pdf"> 
+<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/ReanFernandes"> <i class="bi bi-github" role="img">
@@ -114,53 +125,64 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Making LLaMa-2 Answer the Bar</h1>
-            <p class="subtitle lead">Idea and Project Setup</p>
-                  <div>
-        <div class="description">
-          The how’s and why’s of module choices I made
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">LLMs</div>
-                <div class="quarto-category">Law</div>
-                <div class="quarto-category">Master Thesis</div>
-                <div class="quarto-category">NLP</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">September 27, 2024</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Making LLaMa-2 Answer the Bar : Part 2</h1>
+<p class="subtitle lead">Idea and Project Setup</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">LLMs</div>
+    <div class="quarto-category">Law</div>
+    <div class="quarto-category">Master Thesis</div>
+    <div class="quarto-category">NLP</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    The how’s and why’s of module choices I made
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 27, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<section id="the-idea" class="level2">
+<h2 class="anchored" data-anchor-id="the-idea">The Idea</h2>
+<p>So at this point in my thesis, the only thing I know for certain is that I am supposed to <strong>Fine-tune an open source LLM</strong> for some <strong>Law related purpose</strong>.</p>
+<p><em>That was frustratingly ambiguous</em>. I dont really recall my thought process at the point, but the earliest thing I remember reading, and what my supervisors Noor and Andre recommended was the <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4389233">GPT-4 Passes the bar</a> paper. That kind of set the stage for what we would aim for. We had a well accepted publication that made waves about the zero shot capabilities of GPT-4 in answering the bar. We could build something on that premise.</p>
+<section id="the-purpose" class="level3">
+<h3 class="anchored" data-anchor-id="the-purpose">The purpose</h3>
+<p>I thought about it for a few days and it seemed like the bar exam would be a good thing for us to use as our testbed to check the capabilities of a fine-tuned model. <img src="../../assets/how_to_become_lawyer.svg" class="img-fluid" alt="The path to becoming a lawyer"> It is an objective examination, and is the last exam that an aspiring lawyer must attend to be licensed to practice.</p>
+</section>
+<section id="the-caveats" class="level3">
+<h3 class="anchored" data-anchor-id="the-caveats">The caveats</h3>
 
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
