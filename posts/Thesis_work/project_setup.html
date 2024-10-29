@@ -213,12 +213,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="the-verdict-on-task-specification" class="level3">
 <h3 class="anchored" data-anchor-id="the-verdict-on-task-specification">The Verdict on task specification</h3>
-<p>We decided in the end to keep it simple, and use only the Multi-state Bar Exam (MBE) owing to its multiple choice, single answer format. This would give us a definitive evaluation strategy for our LLM that is already a well accepted paradigm ( used similarly in the <a href="https://huggingface.co/datasets/cais/mmlu">MMLU (Mulit-task Language Understanding)</a> benchmark). Our eval technique basically boiled down to comparing the model’s selected choice with the actual correct option.</p>
+<p>We decided in the end to keep it simple, and use only the Multi-state Bar Exam (MBE) owing to its multiple choice, single answer format. This would give us a definitive evaluation strategy for our LLM that is already a well accepted paradigm ( used similarly in the <a href="https://huggingface.co/datasets/cais/mmlu">MMLU (Multi-task Language Understanding)</a> benchmark). Our eval technique basically boiled down to comparing the model’s selected choice with the actual correct option.</p>
 </section>
 </section>
 <section id="deciding-on-the-model---llama-2-7b" class="level2">
 <h2 class="anchored" data-anchor-id="deciding-on-the-model---llama-2-7b">Deciding on the model - LLaMa-2 7B</h2>
-<p>The main caveat of the GPT-4 paper was that there was no way to confirm (other than the <a href="https://arxiv.org/pdf/2303.08774">technical report of GPT-4</a>) that the bar exam was not included in the training data. The authors also do not mention which version of the model was used for the evaluation.</p>
+<p>The main caveat of the GPT-4 paper was that there was no way to confirm (other than the <a href="https://arxiv.org/pdf/2303.08774">technical report of GPT-4</a>) that the specific bar exam used in the GPT-4 bar paper was not included in the training data used for the model. The authors also do not mention which version of the model was used for the evaluation.</p>
 <p>We decided to use LLaMa-2 7B instead for the following reasons:</p>
 <ul>
 <li>It was an open-weight model.</li>
@@ -227,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Although we don’t have the model training data info, we can still make an effective comparison by first evaluating a base instance of the model and then seeing whether fine-tuning improves the performance over this baseline.</li>
 </ul>
 <p>A thing to note is that the pipeline we use for fine-tuning was made to be model agnostic, and one can, with just a few tweaks to the configs, use any model that is available on <a href="https://huggingface.co/docs/hub/models-the-hub">Huggingface hub</a>.</p>
-<p>Im ofcourse glossing over a lot of the technical details here, but I’m sure someone has done a better job than I have at explaining it, and for the sake of brevity, I move on to the next part about the <a href="../../posts/Thesis_work/data_curation.html">Data extraction and distillation</a></p>
+<p>I’m ofcourse glossing over a lot of the technical details here, but I’m sure someone has done a better job than I have at explaining it, and for the sake of brevity, I move on to the next part about the <a href="../../posts/Thesis_work/data_curation.html">Data extraction and distillation</a></p>
 
 
 </section>
