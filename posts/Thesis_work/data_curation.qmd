@@ -1,0 +1,9 @@
+---
+title: "Making LLaMa-2 Answer the Bar : Part 3"
+subtitle: "Data curation and distillation"
+date: '2024-09-29'
+description: "How I formatted the dataset in preparation for fine-tuning"
+categories: [LLMs, Law, Master Thesis, NLP]
+---
+
+[To be Filled]
