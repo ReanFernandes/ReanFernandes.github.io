@@ -37,12 +37,12 @@ For further details on the structure of the bar exam, you can visit the [NCBE we
 
 ### The Verdict on task specification
 
-We decided in the end to keep it simple, and use only the Multi-state Bar Exam (MBE) owing to its multiple choice, single answer format. This would give us a definitive evaluation strategy for our LLM that is already a well accepted paradigm ( used similarly in the [MMLU (Mulit-task Language Understanding)](https://huggingface.co/datasets/cais/mmlu) benchmark). Our eval technique basically boiled down to comparing the model's selected choice with the actual correct option. 
+We decided in the end to keep it simple, and use only the Multi-state Bar Exam (MBE) owing to its multiple choice, single answer format. This would give us a definitive evaluation strategy for our LLM that is already a well accepted paradigm ( used similarly in the [MMLU (Multi-task Language Understanding)](https://huggingface.co/datasets/cais/mmlu) benchmark). Our eval technique basically boiled down to comparing the model's selected choice with the actual correct option. 
 
 
 
 ## Deciding on the model - LLaMa-2 7B
-The main caveat of the GPT-4 paper was that there was no way to confirm (other than the [technical report of GPT-4](https://arxiv.org/pdf/2303.08774)) that the bar exam was not included in the training data. The authors also do not mention which version of the model was used for the evaluation. 
+The main caveat of the GPT-4 paper was that there was no way to confirm (other than the [technical report of GPT-4](https://arxiv.org/pdf/2303.08774)) that the specific bar exam used in the GPT-4 bar paper was not included in the training data used for the model. The authors also do not mention which version of the model was used for the evaluation. 
 
 We decided to use LLaMa-2 7B instead for the following reasons:
 
@@ -53,4 +53,4 @@ We decided to use LLaMa-2 7B instead for the following reasons:
 
 A thing to note is that the pipeline we use for fine-tuning was made to be model agnostic, and one can, with just a few tweaks to the configs, use any model that is available on [Huggingface hub](https://huggingface.co/docs/hub/models-the-hub).
 
-Im ofcourse glossing over a lot of the technical details here, but I'm sure someone has done a better job than I have at explaining it, and for the sake of brevity, I move on to the next part about the  [Data extraction and distillation](data_curation.qmd)
+I'm ofcourse glossing over a lot of the technical details here, but I'm sure someone has done a better job than I have at explaining it, and for the sake of brevity, I move on to the next part about the [Data extraction and distillation](data_curation.qmd)
