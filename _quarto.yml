@@ -33,7 +33,7 @@ website:
           - text : "Fine-tuning LLMs"
             file : posts/Thesis_work/index.qmd
       - text : CV
-        file : assets/Curriculum-Vitae-Rean-fds.pdf
+        file : assets/Master_resume.pdf
       - icon: github
         href: https://github.com/ReanFernandes
 
